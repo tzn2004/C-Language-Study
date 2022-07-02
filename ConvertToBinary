@@ -1,0 +1,87 @@
+#include<stdio.h>
+
+/*
+*Convert interger to binary
+*Convert interger to octonary
+*Convert interger to hexadecimal
+*/
+
+
+void  ConvertToBinary(int n);
+void ConvertToOctonary(int n);
+void ConvertToHex(int n);
+
+void ConvertToBinary()
+{
+  if(n)
+  {
+    ConvertToBinary(n/2);
+  }
+  else
+  {
+    return;
+  }
+  printf("%d",n%)
+}
+
+void ConvertToOctonary()
+{
+   if(n)
+   {
+    ConvertToBinary(n/8);
+   }
+   else{
+     return;
+     }
+     printf("%d",n%8);   
+}
+
+void ConvertToHex()
+{
+   if(n)
+      ConvertToHex(n/16);
+    else
+      return;
+   
+   if(n%16<=9)
+   {
+      printf("%d",n%16);
+   }
+   	else
+	 {
+		int nTemp = n % 16;
+		switch (nTemp)
+		{
+		case 10:
+			printf("%c", 'A');
+			break;
+		case 11:
+			printf("%c", 'B');
+			break;
+		case 12:
+			printf("%c", 'C');
+			break;
+		case 13:
+			printf("%c", 'D');
+			break;
+		case 14:
+			printf("%c", 'E');
+			break;
+		case 15:
+			printf("%c", 'F');
+			break;
+		}
+	  
+	}
+   
+}
+
+int main()
+{
+  int n;
+  puts("请输入一个整数：");
+  scanf("%d",&n);
+  ConvertToBinary(n);
+ 
+  return 0;
+}
