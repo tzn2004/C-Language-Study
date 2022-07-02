@@ -1,3 +1,4 @@
+#include<stdio.h>
 //数组指针的常用方法
 void print2(int(*p)[5], int x, int y)
 {
