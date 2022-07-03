@@ -1,0 +1,37 @@
+int Mystrlen(const char* str)
+{
+   int count;
+   while(*str!='\0')
+   {
+      count++;
+      str++;
+   }
+   return count;
+}
+
+void Mystrcat(char* des,const char* src)
+{
+    while(*des!='\0')
+      des++;
+    while(*src!='\0')
+    {
+      *des=*src;
+      des++;
+      src++;
+    }
+    *des='\0';
+}
+
+char* Mystrcpy(char* des,const char* src)
+{
+    char* ret=des;
+    while(*src!='\0')
+    {
+       *des=*src;
+       src++;
+       des++;
+    }
+    *des=*src;
+    return ret;
+    
+}
