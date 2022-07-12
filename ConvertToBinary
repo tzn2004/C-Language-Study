@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+//进制的转换
 /*
 *Convert interger to binary
 *Convert interger to octonary
